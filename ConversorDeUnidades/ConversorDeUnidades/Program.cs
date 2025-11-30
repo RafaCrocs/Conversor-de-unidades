@@ -40,8 +40,7 @@ namespace ConversorDeUnidades
         {
             while (true)
             {
-                int opcion;
-                if (int.TryParse(Console.ReadLine(), out opcion))
+                if (int.TryParse(Console.ReadLine(), out int opcion))
                 {
                     if (opcion >= a && opcion <= b)
                     {
@@ -78,7 +77,7 @@ namespace ConversorDeUnidades
             bool a = true;
             while (a)
             {
-                string binario = Console.ReadLine();
+                string binario = Console.ReadLine()!;
                 char[] asd = binario.ToCharArray();
                 for (int i = 0; i < asd.Length; i++)
                 {
@@ -105,7 +104,7 @@ namespace ConversorDeUnidades
             bool a = true;
             while (a)
             {
-                string octal = Console.ReadLine();
+                string octal = Console.ReadLine()!;
                 char[] asd = octal.ToCharArray();
                 for (int i = 0; i < asd.Length; i++)
                 {
@@ -186,7 +185,7 @@ namespace ConversorDeUnidades
                 Console.ReadLine();
                 Console.Clear();
 
-            }
+        }
         static void Distancia()
             {
                 Console.Clear();
@@ -257,8 +256,6 @@ namespace ConversorDeUnidades
                 Console.WriteLine("1. Decimal a Binario\n2. Decimal a Octal\n3. Binario a Decimal\n4. Binario a Octal\n5. Octal a Decimal\n6. Octal a Binario\n7. Regresar\n");
                 int op = RevisionOp(1, 7);
                 int decimal1;
-                string binario;
-                string octal;
                 string result;
                 Console.Clear();
                 switch (op)
@@ -303,5 +300,5 @@ namespace ConversorDeUnidades
                         return;
                 }
             }
-        }
     }
+}
