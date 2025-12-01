@@ -10,7 +10,8 @@ namespace CU_Clases
     {
         public int IdConversion;
         public string NombreConversion;
-        public double Offset { get; set; }
+        public double FactorConversion;
+        public double Suma { get; set; }
 
 
         //public static List<Conversiones> Distancia = new List<Conversiones>
