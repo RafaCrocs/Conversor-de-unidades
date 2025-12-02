@@ -9,7 +9,8 @@ namespace CU_Clases
     public class Conversiones()
     {
         public int IdConversion;
-        public string NombreConversion;
+        public string NombreOrigen;
+        public string? NombreDestino;
         public double FactorConversion;
         public double Suma { get; set; }
 
@@ -17,46 +18,46 @@ namespace CU_Clases
         //public static List<Conversiones> Distancia = new List<Conversiones>
         //{
         //    new Conversiones{IdConversion = 1,
-        //    NombreConversion = "Metros a Kilometros",
+        //    NombreOrigen = "Metros a Kilometros",
         //    FactorConversion = 0.001 },
         //    new Conversiones{IdConversion = 2,
-        //    NombreConversion = "Metros a Centimetros",
+        //    NombreOrigen = "Metros a Centimetros",
         //    FactorConversion = 0.01 },
         //    new Conversiones{IdConversion = 3,
-        //    NombreConversion = "Kilometros a Metros",
+        //    NombreOrigen = "Kilometros a Metros",
         //    FactorConversion = 1000 },
         //    new Conversiones{IdConversion = 4,
-        //    NombreConversion = "Kilometros a Centimetros",
+        //    NombreOrigen = "Kilometros a Centimetros",
         //    FactorConversion = 100000 },
         //    new Conversiones{IdConversion = 5,
-        //    NombreConversion = "Centimetros a Metros",
+        //    NombreOrigen = "Centimetros a Metros",
         //    FactorConversion = 0.01 },
         //    new Conversiones{IdConversion = 6,
-        //    NombreConversion = "Centimetros a Kilometros",
+        //    NombreOrigen = "Centimetros a Kilometros",
         //    FactorConversion = 0.00001 }
         //};
         //public static List<Conversiones> Temperaturas = new List<Conversiones>
         //{
         //    new Conversiones{IdConversion = 1,
-        //    NombreConversion = "Celsius a Fahrenheit",
+        //    NombreOrigen = "Celsius a Fahrenheit",
         //    FactorConversion = 9.0/5.0 },
         //    new Conversiones{IdConversion = 2,
-        //    NombreConversion = "Fahrenheit a Celsius",
+        //    NombreOrigen = "Fahrenheit a Celsius",
         //    FactorConversion = 5.0/9.0 },
         //    new Conversiones{IdConversion = 3,
-        //    NombreConversion = "Celsius a Kelvin",
+        //    NombreOrigen = "Celsius a Kelvin",
         //    FactorConversion = 273.15 }
         //};
         //public static List<Conversiones> Pesos = new List<Conversiones>
         //{
         //    new Conversiones{IdConversion = 1,
-        //    NombreConversion = "Gramos a Kilogramos",
+        //    NombreOrigen = "Gramos a Kilogramos",
         //    FactorConversion = 0.001 },
         //    new Conversiones{IdConversion = 2,
-        //    NombreConversion = "Kilogramos a Gramos",
+        //    NombreOrigen = "Kilogramos a Gramos",
         //    FactorConversion = 1000 },
         //    new Conversiones{IdConversion = 3,
-        //    NombreConversion = "Libras a Kilogramos",
+        //    NombreOrigen = "Libras a Kilogramos",
         //    FactorConversion = 0.453592 }
         //};
     }
